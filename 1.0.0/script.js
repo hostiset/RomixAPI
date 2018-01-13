@@ -1,12 +1,13 @@
-"use strict"; //enable strict mode
+"use strict";
 
-function $error(t) {
-  if (t === undefined||null||"") {
-    alert("Error: t is '" + t + "'");
+function $error(message) {
+  if (message === undefined||null||"") {
+    alert("Error:\nMessage is '" + message + "'");
     
-    return "$error: Error: t is '" + t + "'";
-  } else {
-    alert("Error: " + t)
+    return "$error: Error: Message is '" + message + "'";
+  } else {    
+    alert("Error:\n" + message);
     
-    return "$error: "
+    return "$error: OK";
+  }
 }
